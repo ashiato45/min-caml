@@ -13,4 +13,4 @@ let _ =
       done
     done
   done;
-  Ppm.dump Sys.argv.(3) img1
+  Ppm.dump Sys.argv.(3) (img1 |> (fun (a, b) -> (a |> Bytes.to_string, b)))
